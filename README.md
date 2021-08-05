@@ -1,9 +1,7 @@
-## 创建example目录
+## 编译&运行
 
-	mkdir dh-passwd
-	cd dh-passwd
-	go env -w GO111MODULE=on
-	go env -w GOPROXY=https://goproxy.cn,direct
+	go build main.go
+	nohup ./main server >run.log 2>&1 &
 
 
 ## 初始化dh-passwd，生成go.mod文件
